@@ -1,0 +1,41 @@
+
+<div class="container text-center padded">
+<h1>Our Team</h1>
+<ul class="list-inline text-center">
+  <% data.products.each do |member| %>
+  <li>
+    <%= image_tag member.image, class: "avatar-large" %>
+    <h3><%= member.name.capitalize %></h3>
+  </li>
+  <% end %>
+</ul>
+
+<h3 class="padded">
+  <a href="mailto:contact@airbnb.com">
+    <i class="fa fa-envelope"></i>
+    contact@airbnb.com
+  </a>
+</h3>
+</div>
+
+
+
+<!--
+<ul class="list-inline text-center">
+  <li>
+    <img src="../images/anne.jpg" alt="">
+    <h3>Anne</h3>
+  </li>
+  <li>
+    <img src="../images/seb.jpg" alt="">
+    <h3>Seb</h3>
+  </li>
+  <li>
+    <img src="../images/romain.jpeg" alt="">
+    <h3>Romain</h3>
+  </li>
+</ul>
+-->
+
+
+
